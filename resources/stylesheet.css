@@ -3,6 +3,7 @@
 	src: url('/fonts/Horizon/horizon.otf') format('opentype');
 }
 
+
 body
 {
 	background: #ffffff;
@@ -11,23 +12,32 @@ body
 	font-family: "Horizon";
 }
 header{
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
+
+	width: 100%; /* Ensure the image doesn't exceed the width of the container */
+	height: auto; /* Maintain the aspect ratio */
+	display: block; /* Remove any extra spacing below the image */
+	margin: 0 auto; /* Center the image horizontally */
+	background: black;
 	border-radius: 15px;
-	
+	border: 2px solid #00E8FF;
 }
-.frontboard{
-	font-size: 250%;
-	display: inline-block;
-	background: #00E8FF;
-	border: none;
-	border-radius: 20px;
-	margin-left: 1%;
-	margin-right: 20%;
+.frontboard {
+	font-size: 25%;
+	display: block;
+	background: #000000;
+	border: 2px solid black;
+	border-radius: 25px;
 	color: black;
 	padding: 20px;
-	
-}
+	text-align: center; /* Center the content horizontally */
+  }
+  
+  .frontboard img {
+	max-width: 25%; /* Ensure the image doesn't exceed the width of the container */
+	height: auto; /* Maintain the aspect ratio */
+	display: block; /* Remove any extra spacing below the image */
+	margin: 0 auto; /* Center the image horizontally */
+  }
 .more{
 	display: inline;
 }
@@ -116,12 +126,12 @@ header{
 }
 .card{
 	display: block;
-	background: #00E8FF;
-	border: 2px solid black;
+	background: #000000;
+	border: 2px solid #00E8FF;
 	border-radius: 25px;
 	margin-top:10px;
 	padding: 20px;
-	color: black;
+	color: #00E8FF;
 	font-weight: bold;
 	font-size: 175%;
 	text-align: center;
